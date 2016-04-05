@@ -1,0 +1,597 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-image: url(Picture-yetis.png);
+  height: 5.3em;
+  letter-spacing: 10px;
+  font-size: 2em;
+  padding-left: 40px;
+}
+.column h1 {
+  background-color: #1b454b;
+  display: inline;
+  border: solid #1b454b;
+  border-width: 20px 30px 80px 30px;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 3em; /* 48px */
+  color: #96dce8;
+}
+h2 {
+  font-size: 1.4em; /* 36px */
+}
+
+h2, h3 {
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1b454b;
+  text-align: center;
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+nav ul li {
+  display: inline-block;
+  margin: 5px;
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+li a:visited {
+  color: white;
+}
+li a:link {
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  color: #addfcd;
+}
+li a:active {
+  color: #d5552a;
+}
+footer {
+  background-color: #1b454b;
+  color: white;
+  font-size: .8em;
+}
+.foot {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.req {
+  background-color: #26a0a4;
+  color: #000000;
+  font-size: .8em;
+}
+.req li {
+  list-style: none;
+}
+.req h3 {
+  font-size: 1.5em;
+}
+footer, .req {
+  padding: 10px 10px;
+}
+main {
+  background-position: white;
+  position: relative;
+}
+
+/* INTERNAL-1 STUFF*/
+.img-yeti {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* INTERNAL-2 STUFF*/
+.settss {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#settings-des, #sett-w {
+  display: inline;
+  position: relative;
+}
+#settings-des, #sett-des {
+  color: #26a0a4;
+  font-size: 4em;
+}
+#sett-des {
+  position: relative;
+  text-align: left;
+  bottom: 80px;
+  margin-left: 50px;
+}
+#poss-w {
+  position: absolute;
+  top: 110px;
+}
+.setts p {
+  font-family: 'Lato', sans-serif;
+  padding-top: 20px;
+  margin-top: -100px;
+}
+/* INTERNAL-3 STUFF*/
+.lang {
+  background-color: #96dce8;;
+  color: #1b454b;
+}
+.lang .row .column p {
+  text-align: center;
+  font-weight: bold;
+}
+#lang-li li {
+  font-size: .7em;
+  margin: 0 0 10px 0;
+  font-family: 'Lato', sans-serif;
+  padding-right: 20px;
+}
+#img-about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+}
+#def-ol li {
+  margin: 0 0 20px 0;
+}
+#def-ol {
+  margin-left: -22px;
+}
+#see-also {
+  font-family: 'Slabo 27px', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .9em;
+}
+.dict p {
+  font-family: 'Slabo 27px', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .8em;
+}
+.dict h3 {
+  font-size: 3em;
+  color: #1b454b;
+}
+#noun-dict {
+  font-style: italic;
+  font-weight: bold;
+}
+#synon {
+  font-style: italic;
+  font-weight: bold;
+}
+.dict h3, .dict h4 {
+  display: inline;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+@media (max-width: 619px) {
+  .req {
+    text-align: center;
+  }
+  .req li {
+    position: relative;
+    right: 17px;
+  }
+  /* INTERNAL-1 STUFF*/
+  #features {
+    color: #26a0a4;
+    font-size: 2em;
+  }
+  h5, #latency, p {
+    font-family: 'Slabo 27px', serif;
+  }
+  #latency {
+    position: relative;
+    top: -10px;
+  }
+  #volume {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: -30px;
+  }
+  #master, #output, #stand-w, #cus-base, #mic-gain, #selector {
+    font-size: 1em;
+  }
+  #output {
+    position: relative;
+    top: -42px;
+  }
+  #amp {
+    position: relative;
+    top: -75px;
+  }
+  .right-features p, .left-features p {
+    font-size: .8em;
+    font-weight: bold;
+  }
+  span {
+    font-weight: lighter;
+    font-style: italic;
+  }
+  #word1 {
+    position: relative;
+    top: -80px;
+    font-size: 1.3em;
+  }
+  #word2 {
+    position: relative;
+    top: -120px;
+    font-size: 1.3em;
+  }
+  #jack {
+    font-size: .8em;
+  }
+  #standard-w {
+    position: relative;
+    top: -120px;
+  }
+  #stand-w {
+    position: relative;
+    top: -150px;
+  }
+  #cus-base {
+    position: relative;
+    top: -10px;
+  }
+  #cable-w {
+    position: relative;
+    top: -40px;
+  }
+  #bold-italic {
+    font-weight: bold;
+  }
+  #capsule {
+    position: relative;
+    top: -30px;
+  }
+  #condenser {
+    position: relative;
+    top: -50px;
+  }
+  #mic-gain {
+    position: relative;
+    top: -50px;
+  }
+  #selector {
+    position: relative;
+    top: -50px;
+  }
+  #selector-li {
+    position: relative;
+    top: -80px;
+    left: -20px;
+  }
+  #usb-w {
+    position: relative;
+    top: -70px;
+  }
+  .left-features, .right-features {
+    text-align: center;
+  }
+  .left-features, #features {
+    position: relative;
+    top: 70px;
+  }
+  #features-d {
+    margin-top: 70px;
+  }
+  .features-desc {
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+  .leftf {
+    text-align: right;
+  }
+  .rightf li {
+    position: relative;
+    right: 37px;
+  }
+  .leftf, .rightf {
+    position: relative;
+    bottom: 20px;
+  }
+  #home-des {
+    font-size: 2em;
+  }
+  nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 6px;
+  }
+  header {
+    font-size: 3em;
+    padding-left: 20px;
+  }
+  #mic img {
+    display: block;
+    float: right;
+
+  }
+  .req h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+  /* INTERNAL-1 STUFF*/
+  #features {
+    color: #26a0a4;
+    font-size: 2em;
+  }
+  h5, #latency, p {
+    font-family: 'Slabo 27px', serif;
+  }
+  #latency {
+    position: relative;
+    top: -10px;
+  }
+  #volume {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: -30px;
+  }
+  #master, #output, #stand-w, #cus-base, #mic-gain, #selector {
+    font-size: 1.1em;
+  }
+  #output {
+    position: relative;
+    top: -42px;
+  }
+  #amp {
+    position: relative;
+    top: -75px;
+  }
+  .right-features p, .left-features p {
+    font-size: .8em;
+    font-weight: bold;
+  }
+  span {
+    font-weight: lighter;
+    font-style: italic;
+  }
+  #word1 {
+    position: relative;
+    top: -80px;
+    font-size: 1.3em;
+  }
+  #word2 {
+    position: relative;
+    top: -120px;
+    font-size: 1.3em;
+  }
+  #jack {
+    font-size: .8em;
+  }
+  #standard-w {
+    position: relative;
+    top: -120px;
+  }
+  #stand-w {
+    position: relative;
+    top: -150px;
+  }
+  #cus-base {
+    position: relative;
+    top: -10px;
+  }
+  #cable-w {
+    position: relative;
+    top: -40px;
+  }
+  #bold-italic {
+    font-weight: bold;
+  }
+  #capsule {
+    position: relative;
+    top: -30px;
+  }
+  #condenser {
+    position: relative;
+    top: -50px;
+  }
+  #mic-gain {
+    position: relative;
+    top: -50px;
+  }
+  #selector {
+    position: relative;
+    top: -50px;
+  }
+  #selector-li {
+    position: relative;
+    top: -80px;
+    left: -20px;
+  }
+  #usb-w {
+    position: relative;
+    top: -70px;
+  }
+  .left-features {
+    text-align: right;
+  }
+  #features-d {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 630px) {
+  #home-des {
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+}
+
+@media (min-width: 900px) {
+  #home-des {
+    font-size: 3em;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+}
+@media (min-width: 1100px) {
+  .column-s {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column-s.full {
+    width: 100%;
+  }
+
+  .column-s.two-thirds {
+    width: 66.7%;
+  }
+
+  .column-s.half {
+    width: 50%;
+  }
+
+  .column-s.third {
+    width: 33.3%;
+  }
+
+  .column-s.fourth {
+    width: 25%;
+  }
+
+  .column-s.flow-opposite {
+    float: right;
+  }
+  #img-settings {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .settss {
+    position: relative;
+    top: 40%;
+    transform: translateY(15%);
+  }
+  .dict {
+    position: relative;
+    top: 40%;
+    transform: translateY(17%);
+  }
+}
+@media (max-width: 1099px) {
+  .setts {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #img-settings {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .setts p {
+    padding-bottom: 30px;
+  }
+  .dict {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+  }
+}
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
